@@ -1,0 +1,132 @@
+/* style.css - Dark Theme Redesign */
+
+:root {
+  --bg-dark: #0a192f;
+  --bg-card: #112240;
+  --text-light: #ccd6f6;
+  --text-muted: #8892b0;
+  --accent-color: #64ffda;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header.hero {
+  background-color: var(--bg-dark);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header.hero .profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 20px auto;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-top: 5px;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  color: #0a192f;
+}
+
+h2 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+section {
+  margin: 40px 0;
+}
+
+.skills li, .certifications ul li, .badge {
+  background: #233554;
+  color: var(--accent-color);
+  margin: 4px;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.job, .project {
+  background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.job:hover, .project:hover {
+  transform: translateY(-4px);
+}
+
+.job time, .project time {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.job ul, .project ul {
+  padding-left: 20px;
+}
+
+footer.footer {
+  background-color: #020c1b;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+.contact a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}

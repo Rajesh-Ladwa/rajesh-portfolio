@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajesh Ladwa | Mechanical Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-dark: #0a192f;
+      --text-light: #e2e8f0;
+      --text-soft: #94a3b8;
+      --accent: #38bdf8;
+      --highlight: #3b82f6;
+      --button-bg: #1e293b;
+      --font-main: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-light);
+      font-family: var(--font-main);
+      margin: 0;
+    }
+
+    .hero {
+      background: var(--bg);
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-left {
+      flex: 1 1 50%;
+      padding: 20px;
+      order: 2;
+    }
+
+    .hero-right {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeZoom 2s ease forwards;
+      opacity: 0;
+      transform: scale(0.8);
+      order: 1;
+    }
+
+    @media (min-width: 768px) {
+      .hero-left {
+        order: 1;
+      }
+      .hero-right {
+        order: 2;
+      }
+    }
+
+    @keyframes fadeZoom {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .hero-right img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 12px;
+      border: 4px solid var(--accent);
+    }
+
+    .hero-left h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .hero-left .tagline {
+      font-size: 1.2rem;
+      color: var(--highlight);
+      font-weight: 500;
+    }
+
+    .hero-left .intro {
+      color: var(--text-soft);
+      margin: 20px 0;
+    }
+
+    .hero-left .button {
+      background: var(--accent);
+      color: #0f172a;
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin-right: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .hero-left .button:hover {
+      background: var(--highlight);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-right">
+      <img src="assets/rajesh.jpg" alt="Rajesh Ladwa" />
+    </div>
+    <div class="hero-left">
+      <h1>Hi, I'm Rajesh Ladwa</h1>
+      <p class="tagline">Mechanical Engineer</p>
+      <p class="intro">
+        I specialize in CAD design, CNC machining, 3D printing, and building smart systems using Arduino. Passionate about turning mechanical concepts into real-world impact.
+      </p>
+      <a href="mailto:rajeshladwa.works@gmail.com" class="button">Email Me</a>
+      <a href="assets/rajesh_resume.pdf" class="button" download>Download Resume</a>
+    </div>
+  </header>
+
+  <!-- Remaining sections stay the same -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a Mechanical Engineering student with a strong interest in design, innovation, and automation.
+        My journey includes hands-on experience in CNC machining, 3D printing, and digital systems using Arduino.
+      </p>
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li class="badge">CATIA V5</li>
+        <li class="badge">SolidWorks</li>
+        <li class="badge">CNC Programming</li>
+        <li class="badge">3D Printing</li>
+        <li class="badge">ANSYS</li>
+        <li class="badge">IoT & Automation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="job">
+        <time>Feb 2023 – May 2023 · Jodalli, Karnataka</time>
+        <h3>DANA ANAND PVT LTD — Intern</h3>
+        <ul>
+          <li>Operated CNC machines in a high-volume production line.</li>
+          <li>Worked with Fanuc robots and Lean Manufacturing methods.</li>
+          <li>Produced 10,000+ Nissan Coupling Flange parts.</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">CNC</span>
+          <span class="badge">Lean</span>
+          <span class="badge">Fanuc</span>
+        </div>
+      </div>
+
+      <div class="job">
+        <time>Jan 2023 · Hubli, Karnataka</time>
+        <h3>GTTC Hubli — CNC & Prototyping Training</h3>
+        <ul>
+          <li>Trained in G-code, M-code programming, and Fanuc machine simulation.</li>
+          <li>Learned 3D printing (FDM, SLA, SLS) and Advanced Manufacturing.</li>
+        </ul>
+        <div class="badges">
+          <span class="badge">G-code</span>
+          <span class="badge">3D Printing</span>
+          <span class="badge">SLA/SLS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <time>Current</time>
+        <h3>Pneumatic Sheet Metal Cutter</h3>
+        <p>Designed and fabricated a pneumatic system to cut 0.5 mm aluminum sheets efficiently using compressed air.</p>
+        <div class="badges">
+          <span class="badge">Pneumatics</span>
+          <span class="badge">Sheet Metal</span>
+          <span class="badge">SolidWorks</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <time>Sep 2024 – Feb 2025</time>
+        <h3>Digital Angle Measurement Device</h3>
+        <p>Built using Arduino Nano and MPU6050 to measure pitch angle in real-time for construction and carpentry applications.</p>
+        <div class="badges">
+          <span class="badge">Arduino</span>
+          <span class="badge">MPU6050</span>
+          <span class="badge">Embedded Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li class="badge">CATIA V5 - CAD Design</li>
+        <li class="badge">IoT & Cloud Computing</li>
+        <li class="badge">3D Printing Technologies</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Rajesh Ladwa | Designed with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
